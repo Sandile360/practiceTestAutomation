@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.504" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Simple login page where user performs positive and negative login test cases" name="mock login credentials - #1.1" time="21.802">
+<system-out><![CDATA[
+Given user navigates to login page..........................................passed
+When user type valid student Password123 and click submit...................passed
+And verify page URL, expected text and click logout.........................passed
+When user type invalid incorrectUser Password123 and click submit...........passed
+Then verify error message...................................................passed
+When user type invalid student incorrectPassword and click submit...........passed
+Then verify error message...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Simple login page where user performs positive and negative login test cases" name="mock login credentials - #1.1" time="0.091">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="Tried to run command without establishing a connection
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.2-amd64', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbf7b23f-cb04-484e-86b3-6302394e6927, get {url=https://practicetestautomation.com}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.6.0, moz:accessibilityChecks: false, moz:buildID: 20231211164624, moz:debuggerAddress: 127.0.0.1:4203, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 6.11.2-amd64, moz:processID: 735708, moz:profile: /tmp/rust_mozprofileCyMlkI, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://127.0.0.1:4203/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbf7b23f-cb04-484e-86b3-6302394e6927">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.2-amd64', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cbf7b23f-cb04-484e-86b3-6302394e6927, get {url=https://practicetestautomation.com}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.6.0, moz:accessibilityChecks: false, moz:buildID: 20231211164624, moz:debuggerAddress: 127.0.0.1:4203, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 6.11.2-amd64, moz:processID: 735708, moz:profile: /tmp/rust_mozprofileCyMlkI, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://127.0.0.1:4203/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbf7b23f-cb04-484e-86b3-6302394e6927
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1090)
+	at stepDefinition.LoginStepDefinition.setUp(LoginStepDefinition.java:33)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user navigates to login page..........................................skipped
+When user type valid student Password123 and click submit...................skipped
+And verify page URL, expected text and click logout.........................skipped
+When user type invalid incorrectUser Password123 and click submit...........skipped
+Then verify error message...................................................skipped
+When user type invalid student incorrectPassword and click submit...........skipped
+Then verify error message...................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
