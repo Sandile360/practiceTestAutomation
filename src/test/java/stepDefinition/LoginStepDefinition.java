@@ -83,8 +83,6 @@ public class LoginStepDefinition {
 
     @After
     public void tearDown(){
-
-        driver.close();
         driver.quit();
     }
 }
